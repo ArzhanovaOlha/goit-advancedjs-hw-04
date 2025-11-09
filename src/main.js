@@ -18,7 +18,8 @@ const PER_PAGE = 150;
 let totalHits = 0;
 
 let lightbox = new SimpleLightbox(".gallery a", {
-  captionsData: "data-caption",
+  captionsData: 'alt',
+  captionPosition: 'bottom',
   captionDelay: 250,
 });
 
