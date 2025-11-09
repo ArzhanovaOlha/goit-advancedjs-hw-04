@@ -10,9 +10,9 @@ export function createGalleryMarkup(images) {
         comments,
         downloads,
       }) => `
-  <a class="gallery-item" href="${largeImageURL}" data-caption="${tags}">
+  <li class="gallery-item">
     <div class="photo-card">
-      <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+      <a href="${largeImageURL}" data-caption="${tags}" class="img-link"><img src="${webformatURL}" alt="${tags}" loading="lazy" /></a>
       <ul class="image-stats">
         <li><span>Likes:</span> ${likes}</li>
         <li><span>Views:</span> ${views}</li>
@@ -20,7 +20,7 @@ export function createGalleryMarkup(images) {
         <li><span>Downloads:</span> ${downloads}</li>
       </ul>
     </div>
-  </a>`
+  </li>`
     )
     .join("");
 }
