@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>goit-advancedjs-hw-04</title>
+  <link rel="stylesheet" href="./css/main.css" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+</head>
+<body>
+  <header class="header">
+    <div class="header-title">GoIT - AdvancedJS - HW - 04</div>
+  </header>
 
-    <load src="./partials/footer.html" />
+  <main class="hero">
+    <h1 class="hero-title">
+      Explore Homework 04 with <br><span class="accent">Olha Arzhanova</span>
+    </h1>
+    <p class="hero-subtitle">
+      Short description what was need to be done:
+    </p>
+    <ul class="hero-ul">
+        <li><b>Image Search</b>. Create an application to search for images by keyword and view them in a gallery. Add design elements to the interface according to the layout.</li>
+    </ul>
+    <form id="search-form">
+      <input type="text" name="query" placeholder="Search images..." />
+      <button type="submit">Search</button>
+    </form>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+    <div class="loader hidden"></div>
+
+    <div class="gallery"></div>
+
+    <div class="controls">
+      <button id="load-more" class="load-more hidden">Load more</button>
+      <div class="loader hidden" aria-hidden="true"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © 2025 Olha Arzhanova. All rights reserved.
+  </footer>
+
+  <script type="module" src="./main.js"></script>
+</body>
 </html>
