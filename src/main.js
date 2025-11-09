@@ -1,4 +1,4 @@
-import { fetchImages } from "./js/pixaay-api.js";
+import { fetchImages } from "./js/pixabay-api.js";
 import { createGalleryMarkup, clearGallery, renderGallery } from "./js/render-functions.js";
 
 import SimpleLightbox from "simplelightbox";
